@@ -15,7 +15,7 @@ public class DesignerHook extends AbstractDesignerModuleHook {
     @Override
     public void startup(DesignerContext context, LicenseState activationState) throws Exception {
         // Add the BeanInfo package to the search path
-        context.addBeanInfoSearchPath("com.inductiveautomation.ignition.examples.ce.beaninfos");
+        context.addBeanInfoSearchPath("org.example.designer.beaninfos");
 
         // Add my component to its own palette
         VisionDesignerInterface vdi = (VisionDesignerInterface) context
